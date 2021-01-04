@@ -1,4 +1,4 @@
-neofetch
+#neofetch
 set fish_greeting # Supresses fish's intro message
 
 function fish_user_key_bindings
