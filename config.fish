@@ -82,6 +82,9 @@ else
   bind '$' __history_previous_command_arguments
 end
 
+# Activate python venv
+alias venv='source venv/bin/activate.fish'
+
 # navigation
 alias ..='cd ..' 
 alias ...='cd ../..'
