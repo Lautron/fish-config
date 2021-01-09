@@ -30,3 +30,4 @@ SETUVAR fish_pager_color_completion:eceff4
 SETUVAR fish_pager_color_description:5e81ac
 SETUVAR fish_pager_color_prefix:ebcb8b
 SETUVAR fish_pager_color_progress:d08770
+SETUVAR fish_user_paths:/home/lautarob/\x2elocal/bin
