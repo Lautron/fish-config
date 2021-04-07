@@ -6,6 +6,11 @@ function fish_user_key_bindings
   fish_vi_key_bindings
 end
 
+#pyenv
+set -x PATH "/home/lautarob/.pyenv/bin" $PATH
+status --is-interactive; and . (pyenv init -|psub)
+status --is-interactive; and . (pyenv virtualenv-init -|psub)
+
 ### AUTOCOMPLETE AND HIGHLIGHT COLORS ###
 set fish_color_normal brcyan
 set fish_color_autosuggestion '#7d7d7d'
@@ -45,6 +50,11 @@ end
 function cdc 
     set argument $argv .
     cd ~/Documents/code/$argument[1]
+end
+
+# Function to change screen brightness
+function dbright
+    xrandr --output HDMI-0 --brightness $argv
 end
 
 # Activate python venv
